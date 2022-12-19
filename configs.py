@@ -9,17 +9,17 @@ import os
 
 class Config(object):
 	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	API_ID = int(os.environ.get("API_ID", 12345))
+	API_ID = int(os.environ.get("API_ID"))
 	API_HASH = os.environ.get("API_HASH")
 	STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS", "NoNeed")
 	STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME", "NoNeed")
 	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
 	DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
 	PRESET = os.environ.get("PRESET", "ultrafast")
-	OWNER_ID = int(os.environ.get("OWNER_ID", 1445283714))
+	OWNER_ID = int(os.environ.get("OWNER_ID"))
 	CAPTION = "By @AHToolsBot"
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "VideoWatermark_Bot")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "waterma_bot")
 	DATABASE_URL = os.environ.get("DATABASE_URL")
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	ALLOW_UPLOAD_TO_STREAMTAPE = bool(os.environ.get("ALLOW_UPLOAD_TO_STREAMTAPE", False))
